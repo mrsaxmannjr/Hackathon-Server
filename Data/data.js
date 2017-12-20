@@ -1,8 +1,8 @@
 var clothes = [
   {
     type: "top",
-    event: "wedding",
-    eventType: "formal",
+    event: "Wedding",
+    eventType: "Formal",
     itemType: "tuxedo",
     itemName: "Sherman Trim Fit Flocked Velvet Dinner Jacket",
     description:

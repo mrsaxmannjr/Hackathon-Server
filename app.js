@@ -13,7 +13,7 @@ app.get("/clothes", (request, response) => {
 });
 
 app.get("/selection", (request, response) => {
-  response.json(selection);
+  response.json(selection[0]);
 });
 
 app.post("/selection", (request, response) => {
