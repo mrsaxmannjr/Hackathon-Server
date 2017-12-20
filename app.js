@@ -12,16 +12,12 @@ app.get("/clothes", (request, response) => {
   response.json(data.clothes);
 });
 
-app.get("/events", (request, response) => {
-  response.json(data.events);
-});
-
 app.get("/selection", (request, response) => {
-  response.json(selection[0]);
+  response.json(selection);
 });
 
 app.post("/selection", (request, response) => {
-  selection.push(request.body);
+  selection.unshift(request.body);
   response.json("Post Worked");
 });
 
