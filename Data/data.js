@@ -20,6 +20,5 @@ var clothes = [
 ];
 
 module.exports = {
-  clothes,
-  events
+  clothes
 };

@@ -16,6 +16,10 @@ app.get("/events", (request, response) => {
   response.json(data.events);
 });
 
+app.get("/selection", (request, response) => {
+  response.json(selection[0]);
+});
+
 app.post("/selection", (request, response) => {
   selection.push(request.body);
   response.json("Post Worked");
