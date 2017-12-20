@@ -3,6 +3,7 @@ const cors = require("cors");
 const app = express();
 const bodyParser = require("body-parser");
 const data = require("./Data/data");
+var selection = [];
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -15,7 +16,8 @@ app.get("/events", (request, response) => {
   response.json(data.events);
 });
 
-app.post("/", (request, response) => {
+app.post("/selection", (request, response) => {
+  selection.push(request.body);
   response.json("Post Worked");
 });
 

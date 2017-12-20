@@ -19,8 +19,6 @@ var clothes = [
   }
 ];
 
-var events = ["Black Tie Event", "Western Themed Party", "Interview"];
-
 module.exports = {
   clothes,
   events
