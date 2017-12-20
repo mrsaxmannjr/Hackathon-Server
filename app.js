@@ -7,12 +7,16 @@ const data = require("./Data/data");
 app.use(cors());
 app.use(bodyParser.json());
 
-app.get("/", (request, response) => {
-  response.json(data.dataSet);
+app.get("/clothes", (request, response) => {
+  response.json(data.clothes);
+});
+
+app.get("/events", (request, response) => {
+  response.json(data.events);
 });
 
 app.post("/", (request, response) => {
-  response.json(request.body);
+  response.json("Post Worked");
 });
 
 app.listen(process.env.PORT || 3000, () => {
